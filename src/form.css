@@ -1,0 +1,54 @@
+.glass-morphism-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Apply glass morphosis effect */
+    background-color: rgba(255, 255, 255, 0.2); /* Set the background opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: backdrop-filter 0.2s, background-color 0.2s;
+  
+    &:hover {
+      backdrop-filter: blur(20px); /* Increase blur on hover */
+      background-color: rgba(255, 255, 255, 0.3); /* Adjust background opacity on hover */
+    }
+  }
+  
+  .glass-morphism-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    backdrop-filter: blur(5px); /* Apply glass morphosis effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Set the background opacity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: backdrop-filter 0.2s, background-color 0.2s;
+  
+    &:hover {
+      backdrop-filter: blur(10px); /* Increase blur on hover */
+      background-color: rgba(255, 255, 255, 0.2); /* Adjust background opacity on hover */
+    }
+  }
+  
+  .glass-morphism-button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    backdrop-filter: blur(5px); /* Apply glass morphosis effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Set the background opacity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: backdrop-filter 0.2s, background-color 0.2s;
+  
+    &:hover {
+      backdrop-filter: blur(10px); /* Increase blur on hover */
+      background-color: rgba(255, 255, 255, 0.2); /* Adjust background opacity on hover */
+    }
+  }
+  

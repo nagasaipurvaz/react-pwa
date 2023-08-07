@@ -11,7 +11,6 @@ const App = () => {
 
     <div className="app">
       <h1>Glass Morphism Form</h1>
-      <h1>Frontend Connection Count</h1>
       <Forms/>
     </div>
   );

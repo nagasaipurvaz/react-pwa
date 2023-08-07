@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useEffect,useState} from 'react';
 import './form.css';
 import axios from 'axios';
 
@@ -6,7 +6,19 @@ const Forms = () => {
     const [inputString, setInputString] = useState('');
   const [savedInput, setSavedInput] = useState(null);
 
-
+  useEffect(()=>{
+    fetchConnectionCount();
+  },[]);
+  
+  const fetchConnectionCount = () =>{
+    axios.post('http://localhost:5000/api/log-frontend-connection')
+      .then((response) => {
+        console.log(response.data.message);
+      })
+      .catch((error) => {
+        console.error('Error logging frontend connection:', error);
+      });
+  }
 
 
 
@@ -28,6 +40,7 @@ const Forms = () => {
       .catch((error) => console.error('Error saving input:', error));
   };
 
+ 
   return (
     <div>
     <form className="glass-morphism-form" onSubmit={handleSubmit}>
@@ -50,6 +63,7 @@ const Forms = () => {
           <p>Created At: {new Date(savedInput.createdAt).toLocaleString()}</p>
         </div>
       )}
+
 
       </div>
   );

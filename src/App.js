@@ -10,7 +10,7 @@ const App = () => {
 
 
     <div className="app">
-      <h1>Glass Morphism Form</h1>
+      <h1>Form </h1>
       <Forms/>
     </div>
   );
